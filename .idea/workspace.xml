@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09ed9f55-7c12-4df5-9a9a-362f40123d95" name="Changes" comment="findByNumber implemented">
+    <list default="true" id="09ed9f55-7c12-4df5-9a9a-362f40123d95" name="Changes" comment="findByName implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PhoneBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" afterDir="false" />
     </list>
@@ -84,7 +85,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688241533224</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Stub and tests for findByName">
+      <created>1688241776816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688241776816</updated>
+    </task>
+    <task id="LOCAL-00007" summary="findByName implemented">
+      <created>1688241836241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688241836241</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +119,8 @@
     <MESSAGE value="add implemented" />
     <MESSAGE value="Stub and tests for findByNumber" />
     <MESSAGE value="findByNumber implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="findByNumber implemented" />
+    <MESSAGE value="Stub and tests for findByName" />
+    <MESSAGE value="findByName implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="findByName implemented" />
   </component>
 </project>

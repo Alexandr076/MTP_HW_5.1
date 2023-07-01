@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class PhoneBook {
     private int countOfContacts = 0;
@@ -26,5 +28,9 @@ public class PhoneBook {
             return "Такого контакта не существует в записной книжке";
         }
         return contacts.get(name);
+    }
+
+    public String printAllNames() {
+        return null;
     }
 }

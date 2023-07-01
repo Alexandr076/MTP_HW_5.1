@@ -1,5 +1,8 @@
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.List;
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -50,5 +53,21 @@ public class PhoneBookTest {
         result = phoneBook.findByName(name);
         assertTrue("Неверный результат поиска по имени: номер не должен был быть найден - " + result,
                 result.equals("Такого контакта не существует в записной книжке"));
+    }
+
+    @Test
+    public void testPrintAllNames() {
+        PhoneBook phoneBook = new PhoneBook();
+        HashMap<String, String> testPhoneBook = new HashMap<>();
+        testPhoneBook.put("C", "123");
+        testPhoneBook.put("G", "1234");
+        testPhoneBook.put("A", "1234");
+        testPhoneBook.put("Y", "12345");
+        for(HashMap.Entry<String, String> entry : testPhoneBook.entrySet()) {
+            phoneBook.add(entry.getKey(), entry.getValue());
+        }
+        String result = phoneBook.printAllNames();
+        assertTrue("Неверно выведены имена по алфавиту: " + result,
+                result.equals("A,C,G,Y"));
     }
 }
