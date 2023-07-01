@@ -13,6 +13,11 @@ public class PhoneBook {
     }
 
     public String findByNumber(String number) {
-        return null;
+        for(HashMap.Entry<String, String> entry : contacts.entrySet()) {
+            if (number.equals(entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return "Такого номера не существует в записной книжке";
     }
 }

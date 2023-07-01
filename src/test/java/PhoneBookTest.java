@@ -30,8 +30,8 @@ public class PhoneBookTest {
         phoneBook.add(name, number);
         String result = phoneBook.findByNumber(number);
         assertFalse("Неверный результат поиска номера: возвращён -  " + result, result == null);
-        assertTrue("Неверный результат поиска номера: " + result, result.equals(number));
-        name = "name2";
+        assertTrue("Неверный результат поиска номера: " + result, result.equals(name));
+        number = "1234";
         result = phoneBook.findByNumber(number);
         assertTrue("Неверный результат поиска номера: номер не должен был быть найден - " + result,
                 result.equals("Такого номера не существует в записной книжке"));
