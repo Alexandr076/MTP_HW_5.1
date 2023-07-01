@@ -22,6 +22,9 @@ public class PhoneBook {
     }
 
     public String findByName(String name) {
-        return null;
+        if (contacts.get(name) == null) {
+            return "Такого контакта не существует в записной книжке";
+        }
+        return contacts.get(name);
     }
 }
