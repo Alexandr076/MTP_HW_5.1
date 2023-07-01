@@ -20,4 +20,8 @@ public class PhoneBook {
         }
         return "Такого номера не существует в записной книжке";
     }
+
+    public String findByName(String name) {
+        return null;
+    }
 }

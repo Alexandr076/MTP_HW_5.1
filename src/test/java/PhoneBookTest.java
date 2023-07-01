@@ -29,11 +29,26 @@ public class PhoneBookTest {
         String number = "123";
         phoneBook.add(name, number);
         String result = phoneBook.findByNumber(number);
-        assertFalse("Неверный результат поиска номера: возвращён -  " + result, result == null);
+        assertFalse("Неверный результат поиска номера: возвращён - " + result, result == null);
         assertTrue("Неверный результат поиска номера: " + result, result.equals(name));
         number = "1234";
         result = phoneBook.findByNumber(number);
         assertTrue("Неверный результат поиска номера: номер не должен был быть найден - " + result,
                 result.equals("Такого номера не существует в записной книжке"));
+    }
+
+    @Test
+    public void testFindByName() {
+        PhoneBook phoneBook = new PhoneBook();
+        String name = "name";
+        String number = "123";
+        phoneBook.add(name, number);
+        String result = phoneBook.findByName(name);
+        assertFalse("Неверный результат поиска по имени: возвращён - " + result, result == null);
+        assertTrue("Неверный результат поиска по имени: " + result, result.equals(number));
+        name = "name2";
+        result = phoneBook.findByName(name);
+        assertTrue("Неверный результат поиска по имени: номер не должен был быть найден - " + result,
+                result.equals("Такого контакта не существует в записной книжке"));
     }
 }
