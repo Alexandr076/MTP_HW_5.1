@@ -31,6 +31,16 @@ public class PhoneBook {
     }
 
     public String printAllNames() {
-        return null;
+        TreeMap<String, String> sorted = new TreeMap<>();
+        StringBuilder stringBuilder = new StringBuilder();
+
+        sorted.putAll(contacts);
+        for (Map.Entry<String, String> entry : sorted.entrySet()) {
+            stringBuilder.append(entry.getKey());
+            stringBuilder.append(", ");
+        }
+        stringBuilder.deleteCharAt(stringBuilder.length()-2);
+
+        return stringBuilder.toString().replaceAll("\\s", "");
     }
 }
