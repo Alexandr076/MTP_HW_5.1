@@ -11,4 +11,8 @@ public class PhoneBook {
         }
         return countOfContacts;
     }
+
+    public String findByNumber(String number) {
+        return null;
+    }
 }
